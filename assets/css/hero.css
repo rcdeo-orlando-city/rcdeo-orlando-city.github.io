@@ -1,6 +1,7 @@
 #hero {
     background-color: var(--bg-color);
     height: 100vh;
+    color: var(--text-color);
     > header {
         display: flex;
         justify-content: space-between;
@@ -10,5 +11,42 @@
             rgba(0, 0, 0, 0.75) 41.12%,
             rgba(0, 0, 0, 0) 100%
         );
+        > div {
+            display: flex;
+            align-items: center;
+        }
+        & nav.links {
+            & li a {
+                display: flex;
+                color: var(--text-color);
+                text-decoration: none;
+                font-size: 14px;
+                padding: 3vw;
+                &:active {
+                    transform: translateY(1px);
+                }
+            }
+        }
+        & nav ul {
+            display: none;
+            align-items: center;
+            gap: 10px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            & .social {
+                display: flex;
+                padding: 8px;
+            }
+        }
+        @media (min-width: 992px) {
+            & nav ul {
+                display: flex;
+            }
+            .btn-menu {
+                display: none;
+            }
+        }
     }
 }
