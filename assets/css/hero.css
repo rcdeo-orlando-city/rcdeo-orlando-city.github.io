@@ -91,4 +91,25 @@
             }
         }
     }
+    @media (min-width: 992px) {
+        > section {
+            background: transparent;
+            height: calc(100vh - 140px);
+            justify-content: center;
+            > div {
+                > h1 {
+                    font-size: 86px;
+                    max-width: 800px;
+                    line-height: 86px;
+                }
+                > p {
+                    font-size: 22px;
+                    max-width: 800px;
+                }
+                .buttons {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
 }
