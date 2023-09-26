@@ -2,6 +2,12 @@
     background-color: var(--bg-color);
     height: 100vh;
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../images/bg-hero.webp");
+    background-size: cover;
+    background-position: center;
     > header {
         display: flex;
         justify-content: space-between;
@@ -46,6 +52,42 @@
             }
             .btn-menu {
                 display: none;
+            }
+        }
+    }
+    > section {
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 50vh;
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.75) 41.12%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        width: 100%;
+        > div {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            > h1 {
+                font-size: 40px;
+                font-family: Bebas;
+                margin: 0;
+            }
+            > p {
+                font-size: 14px;
+                font-family: Bebas;
+                margin: 0;
+            }
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0;
+                gap: 20px;
+                > button {
+                    font-family: Bebas;
+                    font-size: 22px;
+                }
             }
         }
     }
