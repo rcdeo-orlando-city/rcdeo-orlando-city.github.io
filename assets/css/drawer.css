@@ -17,6 +17,21 @@
         z-index: -1;
         transition: all .3s ease-in-out;
         right: -300px;
+        > header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            .logo {
+                height: 100px;
+            }
+            .btn-close {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+        }
     }
     &.opened {
         .overlay {
