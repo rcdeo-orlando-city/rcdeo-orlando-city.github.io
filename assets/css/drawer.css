@@ -1,5 +1,5 @@
 #drawer {
-    .overlay{
+    .overlay {
         display: flex;
         position: fixed;
         top: 0;
@@ -7,7 +7,7 @@
         right: 0;
         bottom: 0;
         z-index: -2;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
     .body {
         background-color: var(--bg-color);
@@ -15,7 +15,7 @@
         height: 100vh;
         position: fixed;
         z-index: -1;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         right: -300px;
         display: flex;
         flex-direction: column;
@@ -76,7 +76,6 @@
                     padding: 8px;
                 }
             }
-
         }
     }
     &.opened {
