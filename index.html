@@ -11,14 +11,14 @@
 </head>
 <body>
 
-    <div id="drawer" class="opened">
-        <div class="overlay"></div>
+    <div id="drawer">
+        <div class="overlay" data-drawer="toggle"></div>
         <div class="body">
             <header>
                 <a href="/">
                     <img class="logo" src="assets/images/logo.svg" alt="Orlando City">
                 </a>
-                <button class="btn-close" type="button">
+                <button class="btn-close" type="button" data-drawer="close">
                     <img src="assets/images/icon-close.svg" alt="Close">
                 </button>
             </header>
@@ -67,7 +67,7 @@
                         <li><a class="social" href="#"><img src="assets/images/icon-facebook.svg" alt="Facebook"></a></li>
                     </ul>
                 </nav>
-                <button class="btn-menu" type="button">
+                <button class="btn-menu" type="button" data-drawer="open">
                     <img src="assets/images/icon-menu.svg" alt="Menu">
                 </button>
             </div>
