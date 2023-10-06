@@ -19,7 +19,12 @@
         );
         > div {
             display: flex;
-            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            > div {
+                display: flex;
+                align-items: center;
+            }
         }
         & nav.links {
             & li a {
