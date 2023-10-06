@@ -6,9 +6,9 @@
         .carousel {
             height: 320px;
             .carousel-item {
-                min-height: 320px;
+                min-width: 320px;
                 max-width: 320px;
-                > img {
+                & img {
                     width: 100%;
                 }
                 & a {
