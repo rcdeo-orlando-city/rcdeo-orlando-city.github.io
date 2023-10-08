@@ -1,4 +1,5 @@
 (() => {
+    ////////// DRAWER //////////
     const drawer = document.getElementById("drawer");
 
     document.querySelectorAll('[data-drawer="open"]').forEach((item) => {
@@ -25,4 +26,34 @@
         });
     });
 
+    ////////// PLAYER //////////
+    const player = document.querySelector(".player");
+    const video = player.querySelector("video");
+    if (video) {
+        video.addEventListener("playing", () => {
+            if (player) {
+                player.classList.add("playing");
+            }
+            if (video) {
+                video.controls = true;
+                video.loop = true;
+            }
+        });
+        video.addEventListener("pause", () => {
+            if (player) {
+                player.classList.remove("playing");
+            }
+            if (video) {
+                video.controls = false;
+                video.loop = false;
+            }
+        });
+    }
+    if (player) {
+        player.querySelector(".overlay").addEventListener("click", () => {
+            if (video) {
+                video.play();
+            }
+        });
+    }
 })();
