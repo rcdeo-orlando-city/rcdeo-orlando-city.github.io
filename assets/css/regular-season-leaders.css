@@ -1,0 +1,6 @@
+#regular-season-leaders {
+    > div {
+        padding: 20px;
+        flex-direction: column;
+    }
+}
