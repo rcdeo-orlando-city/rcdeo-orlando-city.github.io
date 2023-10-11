@@ -8,5 +8,6 @@
     --white10-color: rgba(255, 255, 255, .1);
     --white20-color: rgba(255, 255, 255, .2);
     --gray-light: #ddd;
+    --gray-dark: #707576;
     --scrollbar-color: #c0c0c0;
 }
