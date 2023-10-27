@@ -20,9 +20,21 @@ body > footer {
         }
         @media (min-width: 512px) {
             grid-template-columns: 1fr 1fr 1fr;
+            & a {
+                & img {
+                    width: 42px;
+                    height: 42px;
+                }
+            }
         }
         @media (min-width: 768px) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            & a {
+                & img {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
         }
         @media (min-width: 992px) {
             display: flex;
