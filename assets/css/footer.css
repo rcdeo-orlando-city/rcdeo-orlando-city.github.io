@@ -3,4 +3,20 @@ body > footer {
     flex-direction: column;
     background-color: var(--bg-color);
     padding: 20px;
+    > section:first-child {
+        margin-bottom: 50px;
+    }
+    .section-groups {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        > section {
+            flex: 1;
+            min-width: 200px;
+        }
+        @media (min-width: 512px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
 }
