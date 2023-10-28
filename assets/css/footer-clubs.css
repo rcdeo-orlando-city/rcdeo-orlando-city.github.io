@@ -6,6 +6,7 @@ body > footer {
         margin: 0;
         padding: 0;
         list-style: none;
+        margin-bottom: 50px;
         & a {
             display: flex;
             align-items: center;
@@ -31,23 +32,24 @@ body > footer {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             & a {
                 & img {
-                    width: 64px;
-                    height: 64px;
+                    width: 52px;
+                    height: 52px;
                 }
             }
         }
         @media (min-width: 992px) {
             display: flex;
             flex-wrap: wrap;
-            gap: 50px;
+            gap: 50px 15px;
             & a {
                 flex-direction: column;
                 font-size: 16px;
                 font-weight: bold;
                 gap: 20px;
+                min-width: 100px;
                 & img {
-                    width: 100px;
-                    height: 100px;
+                    width: 62px;
+                    height: 62px;
                 }
             }
         }
